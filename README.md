@@ -1,0 +1,1 @@
+All of the referee comments are in src/com, and are labeled by referee # and comment #. The corresponding responses should go into src/resp. Then Latex will put it all together in main.tex.
