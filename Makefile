@@ -8,9 +8,11 @@ LATEXMK := latexmk -e '$$max_repeat=8'
 PDFLATEX := lualatex -interaction nonstopmode
 COM_DIR := src/com
 RESP_DIR := src/resp
+BODY_DIR := src/body
 
 COM_FILES := $(wildcard $(COM_DIR)/referee*/*)
 RESP_FILES := $(wildcard $(RESP_DIR)/referee*/*)
+BODY_FILES := $(wildcard $(BODY_DIR)/referee*.tex)
 BIB_FILES := $(wildcard src/bib/*)
 
 main: natmat-response.pdf
@@ -20,7 +22,7 @@ natmat-response.pdf: FORCE src/input.tex src/main.bib
 	$(LATEXMK) -lualatex="$(PDFLATEX)" -output-directory="$(OUTDIR)" -aux-directory="$(AUXDIR)" -pdf main.tex
 	mv main.pdf natmat-response.pdf
 
-src/input.tex: $(COM_FILES) $(RESP_FILES)
+src/input.tex: $(COM_FILES) $(RESP_FILES) $(BODY_FILES)
 	rm -f src/input.tex && \
 	bash src/build_input.sh
 
