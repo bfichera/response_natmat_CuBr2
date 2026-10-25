@@ -7,4 +7,5 @@
 *.out
 *.synctex.gz
 main.pdf
+*.sw*
 
