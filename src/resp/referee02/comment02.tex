@@ -25,3 +25,28 @@ This doesn't change any conclusions though we just have to make sure we fix it.
 \item OK so here's our argument for why a weaker version of A is sufficient: if the different modulations are potentially different, then how do we even know which one is the higgs and which one is the transverse? Well, if they were switched, then it would imply an exact cancelation between the background and the slow mode, but we know that can't be possible.
 \textcolor{red}{Question: how much detail should we go into?}
 \end{enumerate}
+
+This is a subtle point and we thank the referee for considering this aspect of the paper so carefully.
+The referee is correct; in the presence of additional \gls{shg} contributions, the total susceptibility, 
+\begin{equation}
+\label{eq:chitot}
+\chi^{(\mathrm{tot})}_{ijk} = \chi_{ijk}+\chiback_{ijk},
+\end{equation}
+with $\chi_{ijk}$ defined as in the main text (Eq. 1), will be modulated to a different degree by the \higgs mode.
+However, the assignment of the \qty{0.05}{THz} mode to the \higgs mode of \ce{CuBr2} only depends on the weaker empirical statement given in the subsequent sentence: ``The \higgs mode\ldots should thus appear in all four \gls{shg} polarization channels (\PP, \PS, \SP, and \SS, each of which measures a different linear combination of $\chi_{ijk}$ elements).''
+To see this, first note that, as discussed in the main text, only two excitations are expected in the multiferroic phase of \ce{CuBr2}---the \higgs mode and the \goldstone mode.
+Now consider the reverse assignment, where the \higgs mode occurs at $\qty{0.2}{THz}$ and strongly modulates the \PS and \SP channels only, leaving the parallel channels untouched.
+In that case, an exact cancellation between $\chi_{ijk}$ and $\chiback_{ijk}$ must be happening to quench the oscillation in the \PP and \SS channels, which is unphysical, especially in light of the fact that the \qty{0.2}{THz} oscillation was never seen in the parallel channels across many different samples.
+Thus, the appearance of the \qty{0.05}{THz} oscillation in all polarization channels at similar magnitude is highly suggestive that this oscillation is due to the amplitude mode of the multiferroic order.
+Certainly, this is the most definitive evidence that can be provided by \gls{trshg}, in the presence of a nonzero $\chiback_{ijk}$.
+
+We would also like to emphasize again that the argument for the \qty{0.05}{THz} mode being a \higgs oscillation is supported not only by the polarization dependence of the \gls{trshg} response, but also by the softening of its frequency with temperature, the small energy scale which precludes any structural component of the modulation, and the exclusion of other potential sources described at length in the main text and supplementary material.
+Nevertheless, the referee raises an important point and calls attention to an aspect of our explanation that was misleading.
+To correct this, we have replaced the sentence on page 2 with the more clear statement described above.
+We hope that this resolves any confusion highlighted by this comment and thank the referee again for their sharp, careful consideration of the reasoning in our paper.
+
+\begin{changesmade}
+Replace the affected sentence with: ``According to \cref{eq:glshg}, the \higgs mode should therefore appear in all four \gls{shg} polarization channels (\PP, \PS, \SP, and \SS, each of which measures a different linear combination of $\chi_{ijk}$ elements\citep{boyd}), even in the presence of a nonzero background signal.''
+\end{changesmade}
+
+\textcolor{red}{Want to hear what people think of this response??}
