@@ -1,9 +1,21 @@
-% TODO
-% Response to referee 3, comment 3
-Plan:
-\begin{enumerate}
-\item This is a good question.
-I have to look at the papers about non-multiferroic magnetic Higgs modes again and see if they also observe a goldstone mode.
-Also I should look at the citations in the theory paper that said Quantum criticality $\rightarrow$ Higgs energy < Goldstone energy
-Ajesh found \href{https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.100.205701}{this paper} and \href{https://www.nature.com/articles/nphys4182}{this paper}.
-\end{enumerate}
+We thank the referee for this important comment.
+Yes, there are a few such examples.
+A very similar situation is discussed in \citet{hong_higgs_2017}, where the authors observe a \higgs magnetic excitation in \ce{C9H18N2CuBr4}.
+There, the \goldstone modes are also gapped by an anisotropy energy, and the \higgs mode energy is reduced due to proximity to a quantum critical point.
+The authors of that study argue similarly to us that this stabilizes the \higgs mode by shrinking the phase space satisfies the kinematic condition of the decay process.
+Note that, in \ce{C9H18N2CuBr4}, the \higgs mode must decay into two \goldstone modes to satisfy a spin conservation rule, so the relevant condition is $\Delta_\higgs < 2\Delta_\goldstone$.
+That is why, in that work, the measured gap energies are $\Delta_\higgs = \qty{0.48}{meV}$ and $\Delta_\goldstone = \qty{0.34}{meV}$, i.e. $\Delta_\higgs > \Delta_\goldstone$.
+However, the fundamental idea is the same: the energy of the \higgs mode is reduced close to the \gls{qcp} below a threshold set by the \goldstone mode energy, and this stabilizes the mode.
+
+A second example is in \ce{TlCuCl3}, see \citet{ruegg_quantum_2008}.
+There, the authors observe a longitudinal magnetic excitation whose energy decreases below the transverse mode energy as the \gls{qcp} is approached by tuning pressure.
+Its spectral weight and lifetime also increase close to the \gls{qcp}.
+
+In summary, the situation described in \ce{CuBr2} is not unique, and we greatly appreciate the referee making this point.
+We have updated the main text to make sure this is clear, and thank the referee for helping us strengthen this aspect of our manuscript.
+
+\textcolor{red}{Ajesh we never considered a spin conservation rule? Also do you agree with the sentence I wrote?}
+
+\begin{changesmade}
+Added the following sentence to the discussion section: ``This mechanism---where the phase space available for decay of the \higgs mode is reduced close to the \gls{qcp}---is exactly what is thought to stabilize \higgs excitations in non-ferroelectric quantum magnets\citep{hong_higgs_2017}, occurring here in a multiferroic material.''
+\end{changesmade}
