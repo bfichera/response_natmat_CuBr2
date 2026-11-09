@@ -7,6 +7,48 @@ Plan:
 \item Update the language to soften any statement that kind of relies on there being no additional contribution
 \item Tell the reviewer look, we know there is this additional contribution, this was accounted for in the supplementary material. However, if you look at the change in SHG, it appears to satisfy the constraint they suggested.
 \item Internally we know that everything works out in detail from Bryan's fits
-\item We need to change a sentence in the methods section that says we rotated it to the maximum in the respective polarization, actually I think we rotated it to the maximum of PS
+\item We need to change a sentence in the methods section that says we rotated it to the maximum in the respective polarization, actually I think we rotated it to the maximum of PS \textcolor{red}{OK I did that}
 \end{enumerate}
 
+\textcolor{red}{Option 1}
+We thank the referee to their close consideration of this point.
+The referee is correct that the \gls{shg} signal, if it were purely due to the ferroelectric polarization vector, should have minima at equivalent positions for the \PS and \SS polarization channels.
+The resolution to this comes from something that was briefly touched upon in the Supplementary Material, section S5, where we noted that the static \gls{shg} signal we observe is understood to be a combination of the ferroelectric contribution described by equation 1, plus a background contribution that we believe comes from surface adsorbates.
+Indeed, this additional contribution lifts the nodes in the \SS signal and causes the discrepancy noted by the referee.
+
+We note, importantly, that this background contribution does not affect any of the conclusions of this work.
+Notably, the \textit{change} in the \gls{shg} signal after photoexcitation satisfies the referee's constraint; i.e., the \PP and \PS channels of $\Delta I_\mathrm{SHG}$ are aligned with respect to the incident plane angle $\phi$.
+We have depicted this clearly in the updated manuscript, where Figure 3 (duplicated below) has been modified to show the full angular dependence of the \gls{trshg} signal in the four polarization channels.
+Furthermore, note that the softening of the oscillation frequency close to $T_c$ is direct evidence that the oscillations are related to the phase transition itself and not to the surface adsorbates.
+
+In summary, the referee brings up a very important point and we apologize for the confusion about this in the originally submitted manuscript.
+We have made the following changes to the manuscript to make this point more clear.
+\begin{changesmade}
+\begin{enumerate}
+\item One potential source of confusion was from the sentence, ``The SHG intensity below $T_c$ (Fig. 2) is thus a direct probe of the electric polarization in \ce{CuBr2}, where the dependence on the polarization of the incident electric field is given by Eq. (1).'', on line 98.
+This sentence is actually trivially incorrect as a background contribution is already visible in the intensity above $T_c$.
+We have replaced this sentence by: ``The SHG intensity below $T_c$ (Fig. 2) thus probes the electric polarization in \ce{CuBr2}, where the dependence on the polarization of the incident electric field is given by Eq. (1) heterodyned with a non-ferroelectric contribution from the surface of the sample.''
+\item A second source of confusion we believe stemmed from not showing the full, angle-resolved time dependence of the \gls{shg} intensity in Figure 3.
+In retrospect we believe this was an error, so we have remade the figure, and have duplicated it here for convenience.
+\begin{figure}
+\centering
+\makebox[\linewidth]{\includegraphics[width=183mm]{./gfx/pdf/fig3.pdf}}
+\captionsetup{singlelinecheck=off}
+\caption[]{
+\label{fig:fig3}
+\begin{enumerate*}[label=\caplabel, ref=\capref]
+\item[] Pump-induced change in the \gls{shg} intensity at \qty{15}{K} in the four polarization channels \item \PP \item \PS \item \SP, and \item \SS.
+Upper panels (i) depict line profiles computed by averaging the time-resolved signal in a range $\pm \ang{5}$ from the dashed lines in the lower panels (ii).
+Red solid lines depict the best fit to the line profiles using a sum of two harmonic oscillators (\goldstone and \higgs), with a zero amplitude contstraint for the \goldstone mode in the \PP and \SS channels.
+\end{enumerate*}
+}
+\end{figure}
+% TODO
+% Ask Nuh if we should include a whole description of the heterodyning
+\item \textcolor{red}{This is where we would explain everything about the heterodyning, etc. if Nuh thinks we should do that.} We have expanded the discussion of the background signal in the supplementary material, section S5.
+\end{enumerate}
+\end{changesmade}
+
+% TODO
+% Ask Nuh - should we clarify that we made a mistake declaring the integration
+% regions?
