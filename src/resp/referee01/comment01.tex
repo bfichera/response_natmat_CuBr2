@@ -3,11 +3,14 @@
 Plan:
 \begin{enumerate}
 \item Change figure 1 to show a heatmap plot of the change in SHG intensity vs time
-\item Include the equilibrium data as well just to show it but no need for integration regions now
-\item Update the language to soften any statement that kind of relies on there being no additional contribution
-\item Tell the reviewer look, we know there is this additional contribution, this was accounted for in the supplementary material. However, if you look at the change in SHG, it appears to satisfy the constraint they suggested.
+\item Include the equilibrium data as well just to show it but no need for integration regions now \textcolor{red}{Still need to do}
+\item Update the language to soften any statement that kind of relies on there being no additional contribution \textcolor{red}{Still need to check, maybe there is no such language?}
+\item Decide what approach to take
+\begin{enumerate}
+\item Option 1: Tell the reviewer look, we know there is this additional contribution, this was accounted for in the supplementary material. However, if you look at the change in SHG, it appears to satisfy the constraint they suggested. This is correct, but what's REALLY going on is more complicated; there's heterodyning between the background and the signal
+\item Option 2: Tell the reviewer the whole story. There is this background. This is what the "pure" signal looks like. This is what the total signal looks like. If do the fitting, you can see that everything works out. However, to show this fitting, we would have to explain that we think it's possible to remove the background signal. That invites questions like, why don't you repeat the measurement on the background free signal?
+\end{enumerate}
 \item Internally we know that everything works out in detail from Bryan's fits
-\item We need to change a sentence in the methods section that says we rotated it to the maximum in the respective polarization, actually I think we rotated it to the maximum of PS \textcolor{red}{OK I did that}
 \end{enumerate}
 
 \textcolor{red}{Option 1}
@@ -29,11 +32,11 @@ We have made the following changes to the manuscript to make this point more cle
 This sentence is actually trivially incorrect as a background contribution is already visible in the intensity above $T_c$.
 We have replaced this sentence by: ``The SHG intensity below $T_c$ (Fig. 2) thus probes the electric polarization in \ce{CuBr2}, where the dependence on the polarization of the incident electric field is given by Eq. (1) heterodyned with a non-ferroelectric contribution from the surface of the sample.''
 \item A second source of confusion we believe stemmed from not showing the full, angle-resolved time dependence of the \gls{shg} intensity in Figure 3.
-In retrospect we believe this was an error, so we have remade the figure, and have duplicated it here for convenience.
+In retrospect we believe this was an error, so we have remade the figure, and have duplicated it here for convenience---see below.
+\setcounter{figure}{2}
 \begin{figure}
 \centering
-\makebox[\linewidth]{\includegraphics[width=183mm]{./gfx/pdf/fig3.pdf}}
-\captionsetup{singlelinecheck=off}
+\makebox[\linewidth]{\includegraphics[width=183mm]{fig/fig3.pdf}}
 \caption[]{
 \label{fig:fig3}
 \begin{enumerate*}[label=\caplabel, ref=\capref]
@@ -45,7 +48,7 @@ Red solid lines depict the best fit to the line profiles using a sum of two harm
 \end{figure}
 % TODO
 % Ask Nuh if we should include a whole description of the heterodyning
-\item \textcolor{red}{This is where we would explain everything about the heterodyning, etc. if Nuh thinks we should do that.} We have expanded the discussion of the background signal in the supplementary material, section S5.
+\item We have expanded the discussion of the background signal in the supplementary material, section S5. \textcolor{green}{TODO: This is where we would explain everything about the heterodyning, etc. if Nuh thinks we should do that.}
 \end{enumerate}
 \end{changesmade}
 

@@ -1,10 +1,41 @@
 \usepackage[super,sort&compress]{natbib}
 \bibliographystyle{naturemag}
 
+\makeatletter
+\renewcommand*{\citet}[1]{%
+  \in@{,}{#1}%
+  \ifin@ Refs.\else Ref.\fi~\citenum{#1}}
+\makeatother
+
+\usepackage{glossaries-extra}
+\newcommand*\nestedglsentry[1]{%
+  \protect\ifglsused{#1}{%
+    \glsentryshort{#1}%
+  }{% 
+    \glsentrylong{#1}%
+  }%  
+}
+\newabbreviation{shg}{SHG}{second harmonic generation}
+\newabbreviation{trshg}{tr-SHG}{time-resolved \nestedglsentry{shg}}
+\newabbreviation{dme}{DME}{dynamical magnetoelectric effect}
+\newabbreviation{vdw}{vdW}{van der Waals}
+\newabbreviation{hdme}{H-DME}{Higgs mode-\nestedglsentry{dme}}
+\newabbreviation{qcp}{QCP}{quantum critical point}
+
+\usepackage[inline]{enumitem}
+\newcommand{\caplabel}{\textbf{\alph*},}
+\newcommand{\capref}{\alph*}
+
+\usepackage{graphicx}
+\usepackage{xspace}
+\usepackage{siunitx}
 \usepackage{xcolor}
 \usepackage{csquotes}
 \usepackage[version=4]{mhchem}
 \usepackage{hyperref}
+
+\usepackage{cleveref}
+
 
 \newenvironment{changesmade}{\color{red}\textit{Changes made}}{}
 \newenvironment{response}[1]{\vspace{2.0\baselineskip}\noindent\textit{Referee comment}{\begin{displayquote}\footnotesize#1\end{displayquote}}\color{blue}\textit{Our response}\\}{\vspace{2.0\baselineskip}{\color{black}\hrule}}
@@ -12,7 +43,10 @@
 
 \newcommand{\chiback}{\ensuremath{\chi^{(\mathrm{background})}}\xspace}
 
-\newcommand{\PP}{P$_\mathrm{in}$--P$_\mathrm{out}$}
-\newcommand{\PS}{P$_\mathrm{in}$--S$_\mathrm{out}$}
-\newcommand{\SP}{S$_\mathrm{in}$--P$_\mathrm{out}$}
-\newcommand{\SS}{S$_\mathrm{in}$--S$_\mathrm{out}$}
+\newcommand{\PP}{P$_\mathrm{in}$--P$_\mathrm{out}$\xspace}
+\newcommand{\PS}{P$_\mathrm{in}$--S$_\mathrm{out}$\xspace}
+\newcommand{\SP}{S$_\mathrm{in}$--P$_\mathrm{out}$\xspace}
+\renewcommand{\SS}{S$_\mathrm{in}$--S$_\mathrm{out}$\xspace}
+
+\newcommand{\goldstone}{Goldstone\xspace}
+\newcommand{\higgs}{Higgs\xspace}
