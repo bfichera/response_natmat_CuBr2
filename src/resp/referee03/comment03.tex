@@ -1,13 +1,8 @@
-% TODO
-% Add mathrm to malformed subscripts
 We thank the referee for this important comment.
 Yes, there are a few such examples.
 A very similar situation is discussed in \citet{hong_higgs_2017}, where the authors observe a \higgs magnetic excitation in \ce{C9H18N2CuBr4}.
-There, the \goldstone modes are also gapped by an anisotropy energy, and the \higgs mode energy is reduced due to proximity to a quantum critical point.
-The authors of that study argue similarly to us that this stabilizes the \higgs mode by shrinking the phase space satisfies the kinematic condition of the decay process.
-Note that, in \ce{C9H18N2CuBr4}, the \higgs mode must decay into two \goldstone modes to satisfy a spin conservation rule, so the relevant condition is $\Delta_\higgs < 2\Delta_\goldstone$.
-That is why, in that work, the measured gap energies are $\Delta_\higgs = \qty{0.48}{meV}$ and $\Delta_\goldstone = \qty{0.34}{meV}$, i.e. $\Delta_\higgs > \Delta_\goldstone$.
-However, the fundamental idea is the same: the energy of the \higgs mode is reduced close to the \gls{qcp} below a threshold set by the \goldstone mode energy, and this stabilizes the mode.
+There, the \goldstone modes are also gapped by an anisotropy energy, and the \higgs mode energy is reduced.
+The authors of that study argue similarly to us that this stabilizes the \higgs mode by shrinking the phase space satisfying the kinematic condition of the decay process.
 
 A second example is in \ce{TlCuCl3}, see \citet{ruegg_quantum_2008}.
 There, the authors observe a longitudinal magnetic excitation whose energy decreases below the transverse mode energy as the \gls{qcp} is approached by tuning pressure.
@@ -16,19 +11,17 @@ Its spectral weight and lifetime also increase close to the \gls{qcp}.
 In summary, the situation described in \ce{CuBr2} is not unique, and we greatly appreciate the referee making this point.
 We have updated the main text to make sure this is clear, and thank the referee for helping us strengthen this aspect of our manuscript.
 
-\textcolor{red}{Ajesh we never considered a spin conservation rule? Also do you agree with the sentence I wrote?}
+We are especially thankful to the referee as in the course of thinking about their comment, we realized that the decay process in \ce{CuBr2} where a single \higgs excitation decays into a single \goldstone excitation is actually forbidden by a spin conservation rule, and the leading order decay is actually one \higgs $\rightarrow$ two \goldstone modes.
+The correct requirement is thus $\Delta_\mathrm{\higgs} < 2\Delta_\mathrm{\goldstone}$, not $\Delta_\mathrm{\higgs} < \Delta_\mathrm{\goldstone}$ as we had written in the original manuscript.
+We have updated the manuscript to clarify this (which, of course, does not change any of the conclusions of the work), and are very grateful for the referee's comment as it made us thiink quite deeply about this important point.
 
 \begin{changesmade}
-Added the following sentence to the discussion section: ``This mechanism---where the phase space available for decay of the \higgs mode is reduced close to the \gls{qcp}---is exactly what is thought to stabilize \higgs excitations in non-ferroelectric quantum magnets\citep{hong_higgs_2017}, occurring here in a multiferroic material.''
+\begin{enumerate}
+\item Added the following sentence to the discussion section: ``This mechanism---where the phase space available for decay of the \higgs mode is reduced close to the \gls{qcp}---is exactly what is thought to stabilize \higgs excitations in non-ferroelectric quantum magnets\citep{hong_higgs_2017}, occurring here in a multiferroic material.''
+\item Adjusted multiple instances where the stabilization rule was incorrectly stated as $\Delta_\mathrm{\higgs} < \Delta_\mathrm{\goldstone}$, rather than $\Delta_\mathrm{\higgs} < 2\Delta_\mathrm{\goldstone}$.
+\end{enumerate}
 \end{changesmade}
 
-
 % TODO
-% Review this?
-\textcolor{red}{Ajesh will write a few sentences in the supplementary material about why we actually also need 2 goldstone modes to decay into, not just one. Bryan will edit the main text so make it not confusing and then tell the referee that they're the best referee ever}
-
-
-% TODO
-% Put Quasi -1D in the discussion again. Think about why low anisotropy might
-% mean quantum critical. Read NMR paper more carefully, potentially we can
-% combine all thesee ideas into a great response
+% Do we still need to do this?
+% Ajesh will write a few sentences in the supplementary material about why we actually also need 2 goldstone modes to decay into, not just one.
